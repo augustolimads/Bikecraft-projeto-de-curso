@@ -1,0 +1,300 @@
+/*Fontes do site*/
+body{
+    font-size: 0.95em;
+}
+.arial {
+    font-family: 'Arial','Helvetica', sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+.bold{
+    font-weight: bold;
+}
+.bolder{
+    font-weight: bolder;
+}
+.f-black{
+    color: black;
+}
+.f-white{
+    color: white;
+}
+.f-yellow{
+    color: #FEC63E;
+}
+.size-1{
+    font-size: 1.2em;
+}
+.size-2{
+    font-size: 1.4em;
+}
+.size-3{
+    font-size: 3.2em;
+}
+.italic{
+    font-style: italic;
+}
+/*-----------------------------------------------------------------------------*/
+/* HR */
+hr{
+    width: 50px;
+    border: 1.5px solid white;
+}
+.hryellow{
+    border-color: #FEC63E;
+}
+.hrblack{
+    border-color: black;
+}
+/*botões*/
+.botao-1{
+    font-family: 'Arial','Helvetica', sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #FEC63E;
+    border: 3px solid #FEC63E;
+    padding: 10px 35px;   
+    margin: 20px auto;
+}
+.botao-1:hover{
+    color: white;
+    border: 3px solid white;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+/*
+--------------------------------------------------------------------------
+FORMATAÇÃO DO MENU DO SITE
+*/
+.fic{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+.fic:hover{
+    transition-duration: 0.3s;
+    font-size: 1.3em;
+}
+
+header{
+    background: #FEC63E;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 15px 2px;
+}
+.menu-links{
+    display: flex;
+}
+.menu-links li{
+    margin-right: 35px;
+}
+.menu-links li:last-child{
+    margin-right: 20px;
+}
+.menu-links li a{
+    color: black;
+    font-weight: bold;
+}
+.menu-links li a:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
+.ancora{
+    margin-bottom: 200px;
+}
+/*
+---------------------------------------------------------------------
+section 1
+*/
+.section-1{
+    background-image: url("../img/fotos/mesa-trabalho.jpg");
+    width: 100%;
+    height: 376px;
+    text-justify: center;
+    margin-top: 95px;
+}
+.section-1 p{
+    margin: 5px 0px;
+}
+.section-1 h3{
+    margin: 3px 0px;
+}
+/*
+--------------------------------------------------------------------------
+section 2
+*/
+.section-2{
+    width: 100%;
+    text-justify: center;
+    height: 530px;
+}
+.section-2 hr{
+    border-color: black;
+}
+.section-2 h2{
+    margin: 60px 0px 40px 0px;
+}
+.section-2 .frase{
+    margin: 40px 0px 20px 0px;
+}
+.section-2 img{
+    width: 65%;
+    margin: auto;
+}
+.section-2 .botao-1:hover{
+    color: black;
+    border: 3px solid black;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+.cards{
+    justify-content: space-between;
+}
+.modelos{
+    background: black;
+    width: 300px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.legenda{
+    background: #FEC63E;
+    width: 300px;
+    height: 130px;
+    padding:20px 10px;
+}
+/*
+--------------------------------------------------------------------------
+section 3
+*/
+.section-3{
+    background: black;
+    color: white;
+    width: 100%;
+}
+.section-3 h2{
+    margin: 60px 0px 20px 0px;
+}
+.galeria{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.galeria img{
+    object-fit: cover;
+    height: 280px;
+    width: calc(960/2);
+    flex-basis:100px;
+    flex-grow: 1;
+    margin-top:20px;
+}
+.galeria img:first-child{
+    margin-right: 20px;
+}
+.galeria img:last-child{
+    flex-grow:2;
+}
+.btn-galeria{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.btn-galeria *{
+    background: #FEC63E;
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    border-radius: 100%;
+}
+/*---------------------------------------------------------------------------
+section-4
+*/
+.section-4 h2{
+    margin: 60px 0px 20px 0px;
+}
+.linhas{
+    display: flex;
+    justify-content: center;
+}
+.linhas *{
+    border: 3px solid black;
+    height: 100px;
+    width: 330px;
+    position: relative;
+    top: calc(-60px);
+    border-bottom-color: white;
+    margin-right: -3px;
+    z-index: -2;
+}
+.section-4 .marca{
+    background: white;
+    margin: 0 auto;
+}
+.infografico div{
+    position: relative; 
+    bottom: 55px;
+    padding: 10px 50px;
+    z-index: -1;
+}
+/*---------------------------------------------------------------------------
+section-5
+*/
+.section-5{
+    background: url(../img/fotos/esporte-3.jpeg);
+    background-size:cover;
+    background-position-y: -70%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: -100% -50%;
+}
+.section-5 p{
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+}
+/*---------------------------------------------------------------------------
+section-6
+*/
+.section-6 {
+    width: 100%;
+    background: black;
+    color: white;
+}
+.section-6 .container div{
+    width: 70px;
+    flex-grow:1;
+    margin: 20px 10px;
+    text-align: left;
+}
+.section-6 .container div:first-child{
+    flex-grow: 2;
+    text-align: left;
+}
+.section-6 hr{
+    margin: 10px 0px;
+}
+
+footer{
+    background: #FEC63E;
+    height: 60px;
+}
+footer p{
+    display:flex;
+    height: 60px;
+    align-items: center;
+}
+/*---------------------------------------------------------------------*/
